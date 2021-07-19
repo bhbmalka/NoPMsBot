@@ -80,7 +80,7 @@ async def on_pm_s(client: Bot, message: Message):
         )
     else:
         fwded_mesg = await message.forward(
-            chat_id=AUTH_CHANNEL,
+            chat_id=AUTH_CHANNEL, as_copy=True
             disable_notification=True
         )
 
